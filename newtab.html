@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+		<title>New Tab</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="New customizable Default Tab. Get new inspirational quotes by famous authors, each day.">
+		<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+			<img src="" id="bg">
+			<div id="color"></div>
+			<p id="greeting">
+				<span id="date"></span><br>
+				<span id="hello">Hello <span id="name"></span>!</span><br>
+				<span id="welcome"></span>
+			</p>
+			<p id="quoteblock">
+				<span id="quote"></span><br>
+				<i><span id="author"></span></i>
+				<span id="copyright"></span>
+			</p>
+			<div id="urls">
+				<br><br>
+				<ul type="none" class="listoflinks">
+					<a href="https://www.youtube.com">
+						<li><img alt="icon" src="youtube.png" class="ico"></li>
+					</a>
+					<a href="https://mail.google.com/mail/u/0">
+						<li><img alt="icon" src="gmail.png" class="ico"></li>
+					</a>
+				</ul><br>
+				<ul type="none" class="listoflinks">
+					<li><span class="itext">Youtube</span></li>
+					<li><span class="itext">Gmail</span></li>
+				</ul><br><br><br><br>
+				<ul type="none" class="listoflinks">
+						<a href="https://www.facebook.com">
+							<li><img alt="icon" src="facebook.png" class="ico"></li>
+						</a>
+						<a href="https://www.instagram.com">
+							<li><img alt="icon" src="instagram.png" class="ico"></li>
+						</a>
+					</ul><br>
+					<ul type="none" class="listoflinks">
+						<li><span class="itext">Facebook</span></li>
+						<li><span class="itext">Instagram</span></li>
+					</ul><br><br><br><br>
+					<ul type="none" class="listoflinks">
+							<a href="https://www.linkedin.com">
+								<li><img alt="icon" src="linkedin.png" class="ico"></li>
+							</a>
+							<a href="https://www.amazon.in">
+								<li><img alt="icon" src="Amazon-Logo.jpg" class="ico"></li>
+							</a>
+						</ul><br>
+						<ul type="none" class="listoflinks">
+							<li><span class="itext">Linkedin</span></li>
+							<li><span class="itext">Amazon</span></li>
+						</ul>
+			</div>
+			<div class="analog-clock">
+					<svg width="140" height="140">
+							<circle id="clock-face" cx="70" cy="70" r="65" />
+							<line id="h-hand" x1="70" y1="70" x2="70" y2="38" />
+							<line id="m-hand" x1="70" y1="70" x2="70" y2="20" />
+							<line id="s-hand" x1="70" y1="70" x2="70" y2="12" />
+							<line id="s-tail" x1="70" y1="70" x2="70" y2="56" />
+							<text x="62" y="20" class="number">12</text>
+							<text x="124" y="76" class="number">3</text>
+							<text x="66" y="128" class="number">6</text>
+							<text x="10" y="76" class="number">9</text>
+					</svg>
+					<div class="time-text">
+							<span id="hr">00</span>
+							<span>:</span>
+							<span id="min">00</span>
+							<span>:</span>
+							<span id="sec">00</span>
+							<span id="suffix">--</span>
+					</div>
+			</div>
+			<p id="footer">
+				<span id="title">Petal</span><br>
+				Designed By - Parth Pathak
+			</p>
+			<button id="change"><b>Change Background</b></button>
+			<label id="change2">
+				<input type="color" id="cPalette">
+				<b>Change Color Theme</b>
+			</label>
+		</div>
+		<div id="bgPalette">
+			<label id="upload">
+				<input type="file" accept="image/*" id="userUpload" hidden>
+				<b>Upload Photo</b>
+			</label>
+			<span id="close"><b>&times;</b></span><br><br>
+			<span id="sel"><b>or select an image:</b></span>
+			<br><br>
+			<div id="images"></div>
+			<br><br>
+		</div>
+		<script src="script.js"></script>
+  </body>
+</html>

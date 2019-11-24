@@ -1,0 +1,215 @@
+html,body {
+		height: 100%;
+		overflow: hidden;
+		margin: 0;
+	}
+		#container {
+			width: 100%;
+			height: 100%;
+			border-radius: 0 40%;
+			background: linear-gradient(to bottom right, maroon, teal);
+			color: white;
+		}
+		#bgPalette {
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: 99;
+			padding: 100px;
+			overflow: auto;
+			visibility: hidden;
+		}
+		#cPalette {
+			width: 0px;
+			height: 0px;
+			float: left;
+		}
+		#color {
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+			top: 0;
+			left: 0;
+		}
+		#hello {
+			font-size: 60px;
+		}
+		#welcome {
+			font-size: 36px;
+		}
+		#welcome:hover {
+			opacity: 0.6;
+		text-shadow: black 0px 0px 10px;
+		cursor: pointer;
+		}
+		#change {
+			top: 10%;
+			right: 10%;
+			z-index: 1;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border: 0;
+			background-color: white;
+			opacity: 0.8;
+		}
+		#change2 {
+			top: 10%;
+			right: 28%;
+			z-index: 1;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border: 0;
+			background-color: rgba(255, 68, 0, 0.596);
+		}
+		#upload {
+			top: 10%;
+			right: 10%;
+			z-index: 1;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border: 0;
+			background-color: blue;
+			color: white;
+			cursor: pointer;
+		}
+		#close {
+			right: 20%;
+			font-size: 36px;
+			color: white;
+			cursor: pointer;
+		}
+		#change:hover{
+			opacity: 1;
+			cursor: pointer;
+		}
+		#change2:hover{
+			opacity: 0.8;
+			cursor: pointer;
+			background-color: rgb(255, 68, 0);
+		}
+	#greeting {
+		top: 10%;
+		left: 10%;
+	}
+	#name:hover {
+		opacity: 0.6;
+		text-shadow: black 0px 0px 10px;
+		cursor: pointer;
+	}
+	#quoteblock {
+		bottom: 0;
+		left: 27%;
+		max-width: 40%;
+		padding: 30px;
+		display: none;
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4),rgba(0,0,0,0));
+	}
+	#urls {
+		top: 20%;
+		right: 5%;
+		width: 20%;
+		display: block;
+		z-index: 99;
+	}
+	#sel {
+		color: white;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 20px;
+	}
+	#bg {
+		min-height: 100%;
+		width: 100%;
+		filter: contrast(200%);
+		opacity: 0.6;
+	}
+	.bglist {
+		height: 200px;
+		width: 17%;
+		opacity: 0.8;
+	}
+	.bglist:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+	.listoflinks li {
+		display: block;
+		width: 100px;
+		float: left;
+		text-align: center;
+		z-index: 1;
+	}
+	.itext {
+		color: white;
+		font-size: 12px;
+	}
+	.ico {
+		height: 50px;
+		opacity: 0.8;
+	}
+	.ico:hover {
+		opacity: 1;
+	}
+	#quote {
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 24px;
+      }
+      #author,#copyright {
+            text-align: right;
+		display: block;
+      }
+	#author {
+		font-size: 20px;
+	}
+	#footer {
+		bottom: 10px;
+		right: 20px;
+		text-align: right;
+	}
+      #title {font-size: 48px;}
+      #copyright,#title,.number,#color,#hr1 {opacity: 0.4}
+	  #greeting,#quoteblock,#footer,.open,.analog-clock,#color,#urls,#change,#change2,#bgPalette,#close,#loader
+	  {position: absolute}
+
+      .analog-clock{
+            top: 40%;
+            left: 10%;
+            width:140px;
+			height:140px;
+			text-shadow: black 0px 0px 10px;
+        }
+
+        #clock-face, .number { stroke: white; }
+        
+        #clock-face{
+            stroke-width:2px;
+            fill: transparent;
+        }
+        
+        #h-hand, #m-hand, #s-hand, #s-tail{
+            stroke:white;
+            stroke-linecap:round;
+        }
+
+        #h-hand{
+            stroke-width:3px;
+        }
+        
+        #m-hand{
+            stroke-width:2px;
+        }
+        
+        #s-hand{
+            stroke-width:1px;
+        }
+        
+        .time-text{
+            text-align:center;
+        }
