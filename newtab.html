@@ -61,16 +61,19 @@
 						</ul>
 			</div>
 			<div class="analog-clock">
-					<svg width="140" height="140">
-							<circle id="clock-face" cx="70" cy="70" r="65" />
-							<line id="h-hand" x1="70" y1="70" x2="70" y2="38" />
-							<line id="m-hand" x1="70" y1="70" x2="70" y2="20" />
-							<line id="s-hand" x1="70" y1="70" x2="70" y2="12" />
-							<line id="s-tail" x1="70" y1="70" x2="70" y2="56" />
-							<text x="62" y="20" class="number">12</text>
-							<text x="124" y="76" class="number">3</text>
-							<text x="66" y="128" class="number">6</text>
-							<text x="10" y="76" class="number">9</text>
+					<svg width="280" height="280">
+							<defs>
+									<filter id="f1" x="0" y="0" width="150%" height="150%">
+									  <feOffset result="offOut" in="SourceAlpha" dx="0" dy="0" />
+									  <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
+									  <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+									</filter>
+								    </defs>
+							<circle id="clock-face" cx="140" cy="140" r="0" filter="" />
+							<line id="h-hand" x1="140" y1="140" x2="140" y2="90" />
+							<line id="m-hand" x1="140" y1="140" x2="140" y2="40" />
+							<line id="s-hand" x1="140" y1="140" x2="140" y2="24" />
+							<line id="s-tail" x1="140" y1="140" x2="140" y2="108" />
 					</svg>
 					<div class="time-text">
 							<span id="hr">00</span>

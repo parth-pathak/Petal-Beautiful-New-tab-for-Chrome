@@ -35,6 +35,8 @@ if (!localStorage.welcomeMessage){
 document.getElementById("welcome").innerHTML = localStorage.welcomeMessage;
 
 function clock(){
+	document.getElementById("clock-face").setAttribute("r", "130");
+	document.getElementById("clock-face").setAttribute("filter", "url(#f1)");
 	//calculate angle
 	var d, h, m, s;
 	d = new Date();
@@ -42,6 +44,7 @@ function clock(){
 	h = 30 * ((d.getHours() % 12) + d.getMinutes() / 60);
 	m = 6 * d.getMinutes();
 	s = 6 * d.getSeconds();
+
 	
 	//move hands
 	setAttr('h-hand', h);
@@ -74,7 +77,7 @@ function clock(){
   }
   
   function setAttr(id,val){
-	var v = 'rotate(' + val + ', 70, 70)';
+	var v = 'rotate(' + val + ', 140, 140)';
 	document.getElementById(id).setAttribute('transform', v);
   }
   
@@ -86,6 +89,7 @@ function clock(){
   }
   
   window.onload=clock;
+  
 
 document.getElementById("name").addEventListener("click",function(){
 	var nm = prompt('Please enter your name to display:');

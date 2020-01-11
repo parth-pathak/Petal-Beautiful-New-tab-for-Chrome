@@ -6,8 +6,7 @@ html,body {
 		#container {
 			width: 100%;
 			height: 100%;
-			border-radius: 0 40%;
-			background: linear-gradient(to bottom right, maroon, teal);
+			background-color: black;
 			color: white;
 		}
 		#bgPalette {
@@ -46,7 +45,7 @@ html,body {
 		}
 		#change {
 			top: 10%;
-			right: 10%;
+			right: 5%;
 			z-index: 1;
 			padding-left: 20px;
 			padding-right: 20px;
@@ -58,7 +57,7 @@ html,body {
 		}
 		#change2 {
 			top: 10%;
-			right: 28%;
+			right: 22%;
 			z-index: 1;
 			padding-left: 20px;
 			padding-right: 20px;
@@ -96,8 +95,8 @@ html,body {
 			background-color: rgb(255, 68, 0);
 		}
 	#greeting {
-		top: 10%;
-		left: 10%;
+		top: 5%;
+		left: 5%;
 	}
 	#name:hover {
 		opacity: 0.6;
@@ -113,8 +112,8 @@ html,body {
 		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4),rgba(0,0,0,0));
 	}
 	#urls {
-		top: 20%;
-		right: 5%;
+		top: 30%;
+		left: 5%;
 		width: 20%;
 		display: block;
 		z-index: 99;
@@ -179,27 +178,32 @@ html,body {
 	  {position: absolute}
 
       .analog-clock{
-            top: 40%;
-            left: 10%;
-            width:140px;
-			height:140px;
+            top: 25%;
+            left: 40%;
+            width:280px;
+			height:280px;
 			text-shadow: black 0px 0px 10px;
         }
 
-        #clock-face, .number { stroke: white; }
+        #clock-face, .number { stroke: white; transition: all 0.5s ease 0.5s; }
         
         #clock-face{
-            stroke-width:2px;
+            stroke-width:4px;
             fill: transparent;
         }
         
-        #h-hand, #m-hand, #s-hand, #s-tail{
+        #h-hand, #m-hand{
             stroke:white;
-            stroke-linecap:round;
-        }
+		stroke-linecap:round;
+		transition: all 1s ease 1s;
+	  }
+	  #s-hand, #s-tail{
+		  stroke: white;
+		  stroke-linecap:round;
+	  }
 
         #h-hand{
-            stroke-width:3px;
+            stroke-width:4px;
         }
         
         #m-hand{
@@ -211,5 +215,7 @@ html,body {
         }
         
         .time-text{
-            text-align:center;
+		text-align:center;
+		position: relative;
+		top: -100px;
         }
