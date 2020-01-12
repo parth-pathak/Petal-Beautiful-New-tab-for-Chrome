@@ -44,11 +44,11 @@ html,body {
 		cursor: pointer;
 		}
 		#change {
-			top: 10%;
-			right: 5%;
+			top: 10px;
+			right: 20px;
 			z-index: 1;
-			padding-left: 20px;
-			padding-right: 20px;
+			display: block;
+			width: 200px;
 			padding-top: 10px;
 			padding-bottom: 10px;
 			border: 0;
@@ -56,15 +56,17 @@ html,body {
 			opacity: 0.8;
 		}
 		#change2 {
-			top: 10%;
-			right: 22%;
+			top: 10px;
+			right: 240px;
 			z-index: 1;
-			padding-left: 20px;
-			padding-right: 20px;
+			display: block;
+			width: 200px;
 			padding-top: 10px;
+			text-align: center;
 			padding-bottom: 10px;
 			border: 0;
-			background-color: rgba(255, 68, 0, 0.596);
+			opacity: 0.8;
+			text-shadow: 0 0 2px black;
 		}
 		#upload {
 			top: 10%;
@@ -90,13 +92,12 @@ html,body {
 			cursor: pointer;
 		}
 		#change2:hover{
-			opacity: 0.8;
+			opacity: 1;
 			cursor: pointer;
-			background-color: rgb(255, 68, 0);
 		}
 	#greeting {
-		top: 5%;
-		left: 5%;
+		top: 10px;
+		left: 20px;
 	}
 	#name:hover {
 		opacity: 0.6;
@@ -112,9 +113,8 @@ html,body {
 		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4),rgba(0,0,0,0));
 	}
 	#urls {
-		top: 30%;
-		left: 5%;
-		width: 20%;
+		top: 10px;
+		left: 28%;
 		display: block;
 		z-index: 99;
 	}
@@ -126,7 +126,7 @@ html,body {
 	#bg {
 		min-height: 100%;
 		width: 100%;
-		filter: contrast(200%);
+		filter: contrast(200%) brightness(200%);
 		opacity: 0.6;
 	}
 	.bglist {
@@ -140,7 +140,7 @@ html,body {
 	}
 	.listoflinks li {
 		display: block;
-		width: 100px;
+		width: 80px;
 		float: left;
 		text-align: center;
 		z-index: 1;
@@ -150,7 +150,7 @@ html,body {
 		font-size: 12px;
 	}
 	.ico {
-		height: 50px;
+		height: 30px;
 		opacity: 0.8;
 	}
 	.ico:hover {
@@ -178,14 +178,12 @@ html,body {
 	  {position: absolute}
 
       .analog-clock{
-            top: 25%;
-            left: 40%;
+            top: 15%;
+            left: 38.5%;
             width:280px;
 			height:280px;
 			text-shadow: black 0px 0px 10px;
         }
-
-        #clock-face, .number { stroke: white; transition: all 0.5s ease 0.5s; }
         
         #clock-face{
             stroke-width:4px;
@@ -195,27 +193,30 @@ html,body {
         #h-hand, #m-hand{
             stroke:white;
 		stroke-linecap:round;
-		transition: all 1s ease 1s;
+		transition: all 1s ease 0.5s;
 	  }
 	  #s-hand, #s-tail{
-		  stroke: white;
 		  stroke-linecap:round;
 	  }
 
         #h-hand{
-            stroke-width:4px;
+            stroke-width:5px;
         }
         
         #m-hand{
-            stroke-width:2px;
+            stroke-width:3px;
         }
         
         #s-hand{
-            stroke-width:1px;
-        }
+            stroke-width:2px;
+	  }
+	  
+	  #s-tail{
+		  stroke-width: 5px;
+	  }
         
         .time-text{
 		text-align:center;
 		position: relative;
-		top: -100px;
+		left: 20px;
         }

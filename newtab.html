@@ -12,7 +12,6 @@
 			<img src="" id="bg">
 			<div id="color"></div>
 			<p id="greeting">
-				<span id="date"></span><br>
 				<span id="hello">Hello <span id="name"></span>!</span><br>
 				<span id="welcome"></span>
 			</p>
@@ -22,7 +21,6 @@
 				<span id="copyright"></span>
 			</p>
 			<div id="urls">
-				<br><br>
 				<ul type="none" class="listoflinks">
 					<a href="https://www.youtube.com">
 						<li><img alt="icon" src="youtube.png" class="ico"></li>
@@ -30,38 +28,31 @@
 					<a href="https://mail.google.com/mail/u/0">
 						<li><img alt="icon" src="gmail.png" class="ico"></li>
 					</a>
-				</ul><br>
-				<ul type="none" class="listoflinks">
-					<li><span class="itext">Youtube</span></li>
-					<li><span class="itext">Gmail</span></li>
-				</ul><br><br><br><br>
-				<ul type="none" class="listoflinks">
-						<a href="https://www.facebook.com">
-							<li><img alt="icon" src="facebook.png" class="ico"></li>
-						</a>
-						<a href="https://www.instagram.com">
-							<li><img alt="icon" src="instagram.png" class="ico"></li>
-						</a>
-					</ul><br>
-					<ul type="none" class="listoflinks">
-						<li><span class="itext">Facebook</span></li>
-						<li><span class="itext">Instagram</span></li>
-					</ul><br><br><br><br>
-					<ul type="none" class="listoflinks">
-							<a href="https://www.linkedin.com">
-								<li><img alt="icon" src="linkedin.png" class="ico"></li>
-							</a>
-							<a href="https://www.amazon.in">
-								<li><img alt="icon" src="Amazon-Logo.jpg" class="ico"></li>
-							</a>
-						</ul><br>
-						<ul type="none" class="listoflinks">
-							<li><span class="itext">Linkedin</span></li>
-							<li><span class="itext">Amazon</span></li>
-						</ul>
+					<a href="https://www.facebook.com">
+						<li><img alt="icon" src="facebook.png" class="ico"></li>
+					</a>
+					<a href="https://www.instagram.com">
+						<li><img alt="icon" src="instagram.png" class="ico"></li>
+					</a>
+					<a href="https://www.linkedin.com">
+						<li><img alt="icon" src="linkedin.png" class="ico"></li>
+					</a>
+					<a href="https://www.amazon.in">
+						<li><img alt="icon" src="Amazon-Logo.jpg" class="ico"></li>
+					</a>
+				</ul>
 			</div>
 			<div class="analog-clock">
-					<svg width="280" height="280">
+					<div class="time-text">
+							<span id="hr">00</span>
+							<span>:</span>
+							<span id="min">00</span>
+							<span>:</span>
+							<span id="sec">00</span>
+							<span id="suffix">--</span><br>
+							<span id="date"></span>
+					</div>
+					<svg width="320" height="320">
 							<defs>
 									<filter id="f1" x="0" y="0" width="150%" height="150%">
 									  <feOffset result="offOut" in="SourceAlpha" dx="0" dy="0" />
@@ -69,20 +60,12 @@
 									  <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
 									</filter>
 								    </defs>
-							<circle id="clock-face" cx="140" cy="140" r="0" filter="" />
-							<line id="h-hand" x1="140" y1="140" x2="140" y2="90" />
-							<line id="m-hand" x1="140" y1="140" x2="140" y2="40" />
-							<line id="s-hand" x1="140" y1="140" x2="140" y2="24" />
-							<line id="s-tail" x1="140" y1="140" x2="140" y2="108" />
+							<circle id="clock-face" cx="160" cy="160" r="150" filter="url(#f1)" />
+							<line id="h-hand" x1="160" y1="160" x2="160" y2="96" />
+							<line id="m-hand" x1="160" y1="160" x2="160" y2="48" />
+							<line id="s-hand" x1="160" y1="160" x2="160" y2="40" />
+							<line id="s-tail" x1="160" y1="160" x2="160" y2="118" />
 					</svg>
-					<div class="time-text">
-							<span id="hr">00</span>
-							<span>:</span>
-							<span id="min">00</span>
-							<span>:</span>
-							<span id="sec">00</span>
-							<span id="suffix">--</span>
-					</div>
 			</div>
 			<p id="footer">
 				<span id="title">Petal</span><br>

@@ -2,7 +2,7 @@
  "manifest_version": 2,
  "name": "Petal",
  "description": "New customizable Default Tab. Get new inspirational quotes by famous authors, each day.",
- "version": "1.0.0",
+ "version": "1.1.0",
  "author": "Parth Pathak",
  "browser_action": {
    "default_title": "Petal",

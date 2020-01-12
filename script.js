@@ -9,7 +9,11 @@ document.getElementById("date").innerHTML = d.toDateString();
 if (!localStorage.quoteColor){
 	localStorage.quoteColor = 'rgb(50,50,50)';
 }
-document.getElementById("color").style.background = 'linear-gradient('+localStorage.quoteColor+',black)';
+document.getElementById("color").style.background = 'linear-gradient('+localStorage.quoteColor+',white,'+localStorage.quoteColor+')';
+document.getElementById("change2").style.backgroundColor = localStorage.quoteColor;
+document.getElementById("s-hand").style.stroke = localStorage.quoteColor;
+document.getElementById("s-tail").style.stroke = localStorage.quoteColor;
+document.getElementById("clock-face").style.stroke = localStorage.quoteColor;
 
 fetch('https://quotes.rest/qod').then(response => {
 	return response.json();
@@ -35,8 +39,6 @@ if (!localStorage.welcomeMessage){
 document.getElementById("welcome").innerHTML = localStorage.welcomeMessage;
 
 function clock(){
-	document.getElementById("clock-face").setAttribute("r", "130");
-	document.getElementById("clock-face").setAttribute("filter", "url(#f1)");
 	//calculate angle
 	var d, h, m, s;
 	d = new Date();
@@ -77,7 +79,7 @@ function clock(){
   }
   
   function setAttr(id,val){
-	var v = 'rotate(' + val + ', 140, 140)';
+	var v = 'rotate(' + val + ', 160, 160)';
 	document.getElementById(id).setAttribute('transform', v);
   }
   
